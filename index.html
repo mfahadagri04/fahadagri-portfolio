@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Fahad | My Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo" onclick="location.href='#'">FAHAD<b>AGRI</b></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contacts">CONTACTS</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">FAHAD<b>AGRI</b></div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">ABOUT ME</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">PROJECTS</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">EXPERIENCE</a></li>
+                <li><a href="#contacts" onclick="toggleMenu()">CONTACTS</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img 
+            src="./assets/LinkedIn pfp.jpeg" 
+            alt="Muhammad Fahad profile picture"
+            class="profile-pic"
+            />
+        </div>
+       <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <p class="section__text__p2">Muhammad Fahad</p>
+        <h1>A <span class="multiText"></span></h1>
+        <div class="btn-container">
+            <button 
+            class="btn btn-color-1" onclick="window.open('./assets/Muhammad Fahad - Resume Co-Op Data.pdf')">
+                RESUME
+            </button>
+        </div>
+        <div id="socials-container">
+            <img src="./assets/linkedin.png" 
+            alt="My LinkedIn profile"
+            class="icon" 
+            onclick="location.href='https://www.linkedin.com/in/mf1758'"/>
+            <img src="./assets/github.png" 
+            alt="My GitHub profile"
+            class="icon" 
+            onclick="location.href='https://github.com/mfahadagri04'"/>
+        </div>
+        </div>
+    </section>
+    <section id="about">
+        <h1 class="about-title">About Me</h1>
+        <div class="about-container">
+            <div class="about__pic-container">
+                <img 
+                src="./assets/Bear hump pic.jpeg" 
+                alt="Profile Picture"
+                class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img
+                         src="./assets/experience.png" 
+                        alt="experience icon"
+                        class="icon"
+                        />
+                        <h3>Experience</h3>
+                        <p>Student<br /> </p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                        src="./assets/education.png" 
+                        alt="education icon"
+                        class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>Bcomm - Business Analytics<br /> Minor: Computer Science <br> Expected Graduation: 2026</p>
+                    </div>                 
+                </div>
+                <div class="text-container">
+                    <p>Hello! I am a dedicated student at the University of Calgary, pursuing a major in Business Analytics and a minor in Computer Science. Despite being in the early stages of my academic journey, I possess a profound interest in programming and data visualization. </p>
+                    <p> <br> Within the realm of Business Analytics, my focus lies in harnessing data to derive strategic insights. Proficient in Python and MS PowerBI, I am committed to transforming raw data into actionable solutions. Simultaneously, my minor in Computer Science has equipped me with a solid foundation in algorithms and coding principles. </p>                        
+                    <p> <br> Away from academic pursuits, I prioritize physical well-being. Regular visits to the gym and active participation in soccer not only serve as a means of relaxation but also reinforce the importance of discipline and teamwork. </p>                      
+                    <p> <br> In addition to my academic and athletic pursuits, I occasionally indulge in video games, appreciating the strategic challenges and immersive narratives they offer. </p>                      
+                    <p> <br> I approach my academic and extracurricular endeavors with a profound sense of curiosity and a commitment to continuous learning. My goal is to bridge the gap between theoretical knowledge and practical application, exploring the intersections of business and technology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <h1 class="project-title">My Projects</h1>
+        <div class="project-container">
+            <!-- Login/Sign up system Card -->
+            <div class="card">
+                <div class="front">
+                    <h1>Log in/Sign up system</h1>
+                </div>
+                <div class="back">
+                    <p>In my CS50p final project, I've crafted a CLI user authentication system in Python, storing user credentials within a CSV file. I've implemented a comprehensive set of validations, addressing email format, password complexity, avoiding duplicates, and ensuring that passwords match usernames. These measures not only bolster the security of the authentication system but also contribute to a more user-friendly experience by guiding users through correct input procedures.</p>
+                    <p>Language used: Python</p>
+                    <div class="btn-container">
+                        <button 
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href='#'">
+                        Github
+                        </button>
+                        <button 
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://youtu.be/uEujwh09fyQ?si=9z0Relk1fMMUvp6u'">
+                        Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Calgary Crime Rate Data Visualization Card -->
+            <div class="card2">
+                <div class="front2">
+                    <h1>Calgary Crime Rate Data Visualization</h1>
+                </div>
+                <div class="back2">
+                    <p>In this project, we used Calgary Police crime data and Census data to explore crime patterns over time. We compared different crime types and looked at how factors like unemployment and social disorder relate to crime trends. The interactive dashboard lets users easily compare crime rates by type, time, and neighborhood to better understand crime in Calgary.</p>
+                    <p>Software used: Tableau</p>
+                    <div class="btn-container">
+                        <button 
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://public.tableau.com/views/CrimeAnalysisFinalProjectSubmission/Dashboard2CrimebyLocation?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'">
+                        Visualization
+                        </button>
+                        <button 
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href='#'">
+                        Proposal
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="contacts">
+        <div class="contact__waves">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#7f00ff" fill-opacity="2" d="M0,64L26.7,74.7C53.3,85,107,107,160,138.7C213.3,171,267,213,320,234.7C373.3,256,427,256,480,240C533.3,224,587,192,640,176C693.3,160,747,160,800,149.3C853.3,139,907,117,960,128C1013.3,139,1067,181,1120,213.3C1173.3,245,1227,267,1280,272C1333.3,277,1387,267,1413,261.3L1440,256L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path></svg>
+        </div>
+        <h1 class="contacts__text__p1">Get in Touch!</h1>
+        <p class="contacts-title">Contact Me</p>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                src="./assets/email.png" 
+                alt="Email icon" 
+                class="icon contact-info-icon"
+                />
+                <p><a href="mailto:m.fahadagri4@gmail.com">m.fahadagri4@gmail.com</a></p>
+            </div>
+
+        <!-- Popup form
+        <div id="emailPopup" class="email-popup">
+            <div class="email-popup-content">
+                <span class="close">&times;</span>
+                <h2>Send me a message</h2>
+                <input type="email" id="senderEmail" placeholder="Your Email" required>
+                <textarea id="emailMessage" placeholder="Your Message" required></textarea>
+                <button id="sendEmailBtn">Send Email</button>
+            </div>
+        </div> -->
+        <div class="contact__waves">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#7f00ff" fill-opacity="1" d="M0,64L40,90.7C80,117,160,171,240,213.3C320,256,400,288,480,261.3C560,235,640,149,720,128C800,107,880,149,960,181.3C1040,213,1120,235,1200,208C1280,181,1360,107,1400,69.3L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+        </div>
+    </section>
+    <footer>
+        <p id="copyright"></p>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+
+    <!-- Typing Effect Script -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typingEffect = new Typed(".multiText",{
+            strings : ["Student", "Programmer", "Data Analyst"],
+            loop : true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1500,
+        })
+    </script>
+
+    <!-- Copyright Script -->
+    <script>
+        document.getElementById('copyright').innerHTML = `Copyright © ${new Date().getFullYear()} Muhammad Fahad. All Rights Reserved`;
+    </script>
+
+    <!-- Popup form Script-->
+    <script>
+        document.getElementById('emailIcon').addEventListener('click', function() {
+            document.getElementById('emailPopup').style.display = 'block';
+        });
+
+        document.querySelector('.email-popup .close').addEventListener('click', function() {
+            document.getElementById('emailPopup').style.display = 'none';
+        });
+
+        document.getElementById('sendEmailBtn').addEventListener('click', function() {
+            const senderEmail = document.getElementById('senderEmail').value;
+            const message = document.getElementById('emailMessage').value;
+
+            if (senderEmail && message) {
+                const mailtoLink = `mailto:m.fahadagri4@gmail.com?subject=Message from ${encodeURIComponent(senderEmail)}&body=${encodeURIComponent(message)}`;
+                window.location.href = mailtoLink;
+                document.getElementById('emailPopup').style.display = 'none';
+            } else {
+                alert('Please fill out both fields.');
+            }
+        });
+    </script>
+
+</body>
+</html>
