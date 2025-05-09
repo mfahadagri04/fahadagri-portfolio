@@ -571,9 +571,9 @@ body .contact__waves:last-child svg {
 
 /* FOOTER */
 footer {
-    height: 2vh;
+    height: 3vh;
     margin: 0 auto;
-    color: #7f00ff;
+    background-color: #7f00ff;
 }
 
 footer p {
