@@ -34,6 +34,7 @@
             </div>
         </div>
     </nav>
+    <!-- Profile Section -->
     <section id="profile">
         <div class="section__pic-container">
             <img 
@@ -64,6 +65,7 @@
         </div>
         </div>
     </section>
+    <!-- About Section -->
     <section id="about">
         <h1 class="about-title">About Me</h1>
         <div class="about-container">
@@ -105,6 +107,7 @@
             </div>
         </div>
     </section>
+    <!-- Projects Section -->
     <section id="projects">
         <h1 class="project-title">My Projects</h1>
         <div class="project-container">
@@ -154,6 +157,7 @@
                 </div>
             </div>
     </section>
+    <!-- Contacts Section -->
     <section id="contacts">
         <div class="contact__waves">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#7f00ff" fill-opacity="2" d="M0,64L26.7,74.7C53.3,85,107,107,160,138.7C213.3,171,267,213,320,234.7C373.3,256,427,256,480,240C533.3,224,587,192,640,176C693.3,160,747,160,800,149.3C853.3,139,907,117,960,128C1013.3,139,1067,181,1120,213.3C1173.3,245,1227,267,1280,272C1333.3,277,1387,267,1413,261.3L1440,256L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path></svg>
@@ -162,28 +166,17 @@
         <p class="contacts-title">Contact Me</p>
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
-                <img 
-                src="./assets/email.png" 
-                alt="Email icon" 
-                class="icon contact-info-icon"
-                />
-                <p><a href="mailto:m.fahadagri4@gmail.com">m.fahadagri4@gmail.com</a></p>
+                <a href="mailto:m.fahadagri4@gmail.com" class="contact-me-button">
+                    <img src="./assets/email.png" alt="Email icon" class="icon contact-info-icon" />
+                    m.fahadagri4@gmail.com
+                </a>                
             </div>
-
-        <!-- Popup form
-        <div id="emailPopup" class="email-popup">
-            <div class="email-popup-content">
-                <span class="close">&times;</span>
-                <h2>Send me a message</h2>
-                <input type="email" id="senderEmail" placeholder="Your Email" required>
-                <textarea id="emailMessage" placeholder="Your Message" required></textarea>
-                <button id="sendEmailBtn">Send Email</button>
-            </div>
-        </div> -->
+        </div>
         <div class="contact__waves">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#7f00ff" fill-opacity="1" d="M0,64L40,90.7C80,117,160,171,240,213.3C320,256,400,288,480,261.3C560,235,640,149,720,128C800,107,880,149,960,181.3C1040,213,1120,235,1200,208C1280,181,1360,107,1400,69.3L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
         </div>
     </section>
+    <!-- Footer -->
     <footer>
         <p id="copyright"></p>
     </footer>
@@ -207,30 +200,5 @@
     <script>
         document.getElementById('copyright').innerHTML = `Copyright © ${new Date().getFullYear()} Muhammad Fahad. All Rights Reserved`;
     </script>
-
-    <!-- Popup form Script-->
-    <script>
-        document.getElementById('emailIcon').addEventListener('click', function() {
-            document.getElementById('emailPopup').style.display = 'block';
-        });
-
-        document.querySelector('.email-popup .close').addEventListener('click', function() {
-            document.getElementById('emailPopup').style.display = 'none';
-        });
-
-        document.getElementById('sendEmailBtn').addEventListener('click', function() {
-            const senderEmail = document.getElementById('senderEmail').value;
-            const message = document.getElementById('emailMessage').value;
-
-            if (senderEmail && message) {
-                const mailtoLink = `mailto:m.fahadagri4@gmail.com?subject=Message from ${encodeURIComponent(senderEmail)}&body=${encodeURIComponent(message)}`;
-                window.location.href = mailtoLink;
-                document.getElementById('emailPopup').style.display = 'none';
-            } else {
-                alert('Please fill out both fields.');
-            }
-        });
-    </script>
-
 </body>
 </html>
