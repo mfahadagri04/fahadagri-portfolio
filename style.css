@@ -324,17 +324,6 @@ section {
     display: flex;
 }
 
-.about-details-container {
-    justify-content: center;
-    flex-direction: column;
-    cursor: default;
-    display: flex;
-}
-
-.about-container, .about-details-container {
-    display: flex;
-}
-
 .about-pic {
     border-radius: 2rem;
     height: 700px;
