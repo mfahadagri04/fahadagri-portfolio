@@ -575,14 +575,20 @@ section {
 }
 
 .contact-me-button:hover {
-    background: #3d535f;
-    color: white;
+    text-decoration: underline;
+    transform: scale(1.03);
 }
 
 /* WAVES FOR LAST CONTAINER */
 .contact__waves {
     width: 100%; 
 }
+
+.contact__waves,
+.contact__waves svg {
+    pointer-events: none;
+}
+
 
 .contact__waves svg {
     display: block;
