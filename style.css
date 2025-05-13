@@ -309,51 +309,97 @@ section {
 /* ABOUT */
 #about {
     position: relative;
+    padding: 4rem 0;
 }
 
 .about-title {
     text-align: center;
-    font-size: 70px;
+    font-size: 4rem; /* Using rem instead of px for better scalability */
+    margin-bottom: 3rem;
+    color: #3d535f;
 }
 
 .about-container {
-    gap: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    size: 5rem;
     display: flex;
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-pic {
     border-radius: 2rem;
     height: 700px;
     width: 500px;
+    object-fit: cover; /* Ensures image maintains aspect ratio */
 }
 
 .details-container {
-    padding: 1rem;
+    padding: 2rem;
     flex: 1;
     background: white;
     border-radius: 0.5rem;
-    border: #3d535f 0.2rem solid;
-    border-color: #7f00ff;
+    border: 0.2rem solid #7f00ff;
     text-align: center;
-    width: 20rem;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.section-container{
+.section-container {
+    display: flex;
     gap: 4rem;
     height: 80%;
+    align-items: center;
+    justify-content: center;
 }
 
 .section__pic-container {
     height: 650px;
     width: 650px;
     margin: auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon {
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .about-pic, .section__pic-container {
+        height: 500px;
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .details-container {
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 2.5rem;
+    }
+    
+    .about-pic, .section__pic-container {
+        height: 350px;
+    }
 }
 
 /* PROJECTS SECTION */
