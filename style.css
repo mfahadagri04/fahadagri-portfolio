@@ -314,7 +314,7 @@ section {
 
 .about-title {
     text-align: center;
-    font-size: 4rem; /* Using rem instead of px for better scalability */
+    font-size: 2.5rem; /* Using rem instead of px for better scalability */
     margin-bottom: 3rem;
     color: #3d535f;
 }
@@ -403,25 +403,61 @@ section {
 }
 
 /* PROJECTS SECTION */
-#project {
+#projects {
     position: relative;
+    padding: 4rem 0;
+    background-color: #f8f9fa; /* Light background for the section */
 }
+
 .project-title {
     text-align: center;
-    font-size: 70px;
-    margin-bottom: 50px;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #3d535f;
 }
 
 .project-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 75px; /* Adds space between cards */
+    gap: 3rem;
     perspective: 800px;
-    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    position: relative; /* Needed if child elements use absolute */
+    padding: 0 1rem;
+}
+
+/* Base Card Styles - Applies to all cards */
+.card {
+    width: 350px;
+    height: 500px;
+    position: relative;
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+/* Add this to your CSS */
+.card, .card2 {
+    box-sizing: border-box; /* Ensures padding/borders don't affect dimensions */
+    width: 350px;
+    height: 400px; /* Match front/back height */
+}
+
+.front, .back, 
+.front2, .back2 {
+    height: 100%; /* Use 100% of parent */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.project-container {
+    perspective: 1000px; /* Smoother perspective */
+    align-items: center; /* Ensures cards align properly */
 }
 
 /* Card 1*/
